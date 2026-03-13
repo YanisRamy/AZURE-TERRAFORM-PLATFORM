@@ -15,24 +15,19 @@ This project demonstrates professional-grade Infrastructure as Code practices us
 
 ---
 
-## Architecture
+## Architecture Diagram
 
-### Infrastructure provisioned with Terraform modules
+![Architecture Diagram](screenshots/terraform-platform-diagram.svg)
+
+---
+
+## Infrastructure
+
 - **Resource Group** : rg-terraform-platform-dev
 - **Virtual Network** : vnet-tfplatform-dev (10.0.0.0/8)
 - **AKS Subnet** : 10.240.0.0/16
 - **AKS Cluster** : aks-tfplatform-dev (2 nodes, Standard_B2s_v2)
 - **ACR** : acrtfplatformdev.azurecr.io
-
-### GitOps with ArgoCD
-- ArgoCD watches the GitHub repository
-- Any change pushed to main is automatically deployed to AKS
-- App health and sync status monitored in real-time
-
-### Observability with Prometheus + Grafana
-- Prometheus collects metrics from all pods and nodes
-- Grafana dashboards show CPU, memory and network usage
-- Alertmanager configured for critical alerts
 
 ---
 
@@ -86,22 +81,10 @@ AZURE-TERRAFORM-PLATFORM/
 ├── terraform/
 │   ├── modules/
 │   │   ├── network/        # VNet and Subnets
-│   │   │   ├── main.tf
-│   │   │   ├── variables.tf
-│   │   │   └── outputs.tf
 │   │   ├── aks/            # Kubernetes Cluster
-│   │   │   ├── main.tf
-│   │   │   ├── variables.tf
-│   │   │   └── outputs.tf
 │   │   └── acr/            # Container Registry
-│   │       ├── main.tf
-│   │       ├── variables.tf
-│   │       └── outputs.tf
 │   └── environments/
 │       └── dev/            # Dev environment config
-│           ├── main.tf
-│           ├── variables.tf
-│           └── outputs.tf
 ├── argocd/
 │   └── todo-app.yml        # ArgoCD Application manifest
 ├── apps/
@@ -182,9 +165,3 @@ helm install prometheus prometheus-community/kube-prometheus-stack --namespace m
 Yanis Ramy
 - GitHub: https://github.com/YanisRamy
 - Email: yanisramy4@gmail.com
-
----
-
-## Architecture Diagram
-
-![Architecture Diagram](screenshots/terraform-platform-diagram.svg)
