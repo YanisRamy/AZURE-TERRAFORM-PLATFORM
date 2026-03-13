@@ -157,11 +157,3 @@ helm install prometheus prometheus-community/kube-prometheus-stack --namespace m
 | ArgoCD | argocd namespace | Healthy |
 | Prometheus | monitoring namespace | Running |
 | Grafana | monitoring namespace | Running |
-
----
-
-## Author
-
-Yanis Ramy
-- GitHub: https://github.com/YanisRamy
-- Email: yanisramy4@gmail.com
