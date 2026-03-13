@@ -182,3 +182,9 @@ helm install prometheus prometheus-community/kube-prometheus-stack --namespace m
 Yanis Ramy
 - GitHub: https://github.com/YanisRamy
 - Email: yanisramy4@gmail.com
+
+---
+
+## Architecture Diagram
+
+![Architecture Diagram](screenshots/terraform-platform-diagram.svg)

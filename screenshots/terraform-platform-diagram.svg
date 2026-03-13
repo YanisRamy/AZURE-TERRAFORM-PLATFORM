@@ -1,0 +1,180 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#0a0f1e"/>
+
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="1">Azure Terraform Platform</text>
+  <text x="500" y="58" text-anchor="middle" font-size="13" fill="#6b7a9e">Terraform Modules · ArgoCD GitOps · Prometheus · Grafana</text>
+
+  <!-- Arrow definitions -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0078d4"/>
+    </marker>
+    <marker id="arrGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4ade80"/>
+    </marker>
+    <marker id="arrOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- GITHUB -->
+  <rect x="30" y="80" width="140" height="80" rx="12" fill="#161b27" stroke="#238636" stroke-width="2"/>
+  <rect x="30" y="80" width="140" height="6" rx="12" fill="#238636"/>
+  <text x="100" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">GitHub</text>
+  <text x="100" y="128" text-anchor="middle" font-size="10" fill="#6b7a9e">AZURE-TERRAFORM</text>
+  <text x="100" y="143" text-anchor="middle" font-size="10" fill="#6b7a9e">-PLATFORM</text>
+
+  <!-- TERRAFORM -->
+  <rect x="30" y="210" width="140" height="100" rx="12" fill="#161b27" stroke="#7B42BC" stroke-width="2"/>
+  <rect x="30" y="210" width="140" height="6" rx="12" fill="#7B42BC"/>
+  <text x="100" y="238" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">Terraform</text>
+  <text x="100" y="256" text-anchor="middle" font-size="10" fill="#a78bfa">module.network</text>
+  <text x="100" y="272" text-anchor="middle" font-size="10" fill="#a78bfa">module.aks</text>
+  <text x="100" y="288" text-anchor="middle" font-size="10" fill="#a78bfa">module.acr</text>
+
+  <!-- Arrow Terraform to Azure -->
+  <line x1="170" y1="260" x2="210" y2="260" stroke="#7B42BC" stroke-width="2" marker-end="url(#arrPurple)"/>
+  <text x="190" y="253" text-anchor="middle" font-size="9" fill="#7B42BC">apply</text>
+
+  <!-- AZURE CLOUD BOX -->
+  <rect x="210" y="75" width="570" height="450" rx="14" fill="#0d1526" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <rect x="210" y="63" width="130" height="24" rx="4" fill="#0078d4"/>
+  <text x="275" y="79" text-anchor="middle" font-size="12" font-weight="600" fill="#ffffff">Microsoft Azure</text>
+
+  <!-- Resource Group box -->
+  <rect x="225" y="90" width="540" height="425" rx="10" fill="#111827" stroke="#0078d4" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="240" y="108" font-size="10" fill="#0078d4">rg-terraform-platform-dev</text>
+
+  <!-- VNET box -->
+  <rect x="235" y="115" width="520" height="110" rx="10" fill="#0d1a2e" stroke="#0078d4" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="250" y="133" font-size="10" fill="#0078d4">VNet: vnet-tfplatform-dev (10.0.0.0/8)</text>
+
+  <!-- AKS Subnet -->
+  <rect x="245" y="138" width="500" height="78" rx="8" fill="#0a1628" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="260" y="155" font-size="10" fill="#4ade80">AKS Subnet: 10.240.0.0/16</text>
+
+  <!-- Node 1 -->
+  <rect x="255" y="162" width="100" height="44" rx="6" fill="#1a2540" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="305" y="181" text-anchor="middle" font-size="10" font-weight="600" fill="#ffffff">Node 1</text>
+  <text x="305" y="196" text-anchor="middle" font-size="9" fill="#4ade80">Standard_B2s_v2</text>
+
+  <!-- Node 2 -->
+  <rect x="365" y="162" width="100" height="44" rx="6" fill="#1a2540" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="415" y="181" text-anchor="middle" font-size="10" font-weight="600" fill="#ffffff">Node 2</text>
+  <text x="415" y="196" text-anchor="middle" font-size="9" fill="#4ade80">Standard_B2s_v2</text>
+
+  <!-- ACR -->
+  <rect x="490" y="162" width="120" height="44" rx="6" fill="#1a2540" stroke="#0078d4" stroke-width="1.5"/>
+  <text x="550" y="181" text-anchor="middle" font-size="10" font-weight="600" fill="#ffffff">ACR</text>
+  <text x="550" y="196" text-anchor="middle" font-size="9" fill="#0078d4">acrtfplatformdev</text>
+
+  <!-- ARGOCD namespace -->
+  <rect x="235" y="240" width="240" height="130" rx="10" fill="#1a1a2e" stroke="#EF7B4D" stroke-width="2"/>
+  <rect x="235" y="240" width="240" height="6" rx="10" fill="#EF7B4D"/>
+  <text x="355" y="263" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">ArgoCD</text>
+  <text x="355" y="279" text-anchor="middle" font-size="10" fill="#EF7B4D">namespace: argocd</text>
+
+  <!-- ArgoCD components -->
+  <rect x="245" y="286" width="100" height="34" rx="6" fill="#0d1526" stroke="#EF7B4D" stroke-width="1"/>
+  <text x="295" y="301" text-anchor="middle" font-size="9" fill="#ffffff">argocd-server</text>
+  <text x="295" y="314" text-anchor="middle" font-size="9" fill="#4ade80">Running</text>
+
+  <rect x="355" y="286" width="110" height="34" rx="6" fill="#0d1526" stroke="#EF7B4D" stroke-width="1"/>
+  <text x="410" y="301" text-anchor="middle" font-size="9" fill="#ffffff">app-controller</text>
+  <text x="410" y="314" text-anchor="middle" font-size="9" fill="#4ade80">Running</text>
+
+  <text x="355" y="345" text-anchor="middle" font-size="10" fill="#ffffff">todo-app → Healthy ✓ Synced ✓</text>
+  <text x="355" y="360" text-anchor="middle" font-size="9" fill="#6b7a9e">Auto sync enabled</text>
+
+  <!-- MONITORING namespace -->
+  <rect x="490" y="240" width="265" height="190" rx="10" fill="#1a1a2e" stroke="#F46800" stroke-width="2"/>
+  <rect x="490" y="240" width="265" height="6" rx="10" fill="#F46800"/>
+  <text x="622" y="263" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Monitoring Stack</text>
+  <text x="622" y="279" text-anchor="middle" font-size="10" fill="#F46800">namespace: monitoring</text>
+
+  <!-- Prometheus -->
+  <rect x="500" y="286" width="115" height="50" rx="6" fill="#0d1526" stroke="#E6522C" stroke-width="1.5"/>
+  <text x="557" y="306" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Prometheus</text>
+  <text x="557" y="322" text-anchor="middle" font-size="9" fill="#E6522C">Metrics collection</text>
+  <text x="557" y="333" text-anchor="middle" font-size="9" fill="#4ade80">Running</text>
+
+  <!-- Grafana -->
+  <rect x="625" y="286" width="120" height="50" rx="6" fill="#0d1526" stroke="#F46800" stroke-width="1.5"/>
+  <text x="685" y="306" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">Grafana</text>
+  <text x="685" y="322" text-anchor="middle" font-size="9" fill="#F46800">Dashboards</text>
+  <text x="685" y="333" text-anchor="middle" font-size="9" fill="#4ade80">Running</text>
+
+  <!-- Alertmanager -->
+  <rect x="500" y="346" width="115" height="34" rx="6" fill="#0d1526" stroke="#f59e0b" stroke-width="1"/>
+  <text x="557" y="361" text-anchor="middle" font-size="9" fill="#ffffff">Alertmanager</text>
+  <text x="557" y="374" text-anchor="middle" font-size="9" fill="#4ade80">Running</text>
+
+  <!-- node-exporter -->
+  <rect x="625" y="346" width="120" height="34" rx="6" fill="#0d1526" stroke="#f59e0b" stroke-width="1"/>
+  <text x="685" y="361" text-anchor="middle" font-size="9" fill="#ffffff">Node Exporter</text>
+  <text x="685" y="374" text-anchor="middle" font-size="9" fill="#4ade80">Running x2</text>
+
+  <!-- Apps namespace -->
+  <rect x="235" y="385" width="520" height="70" rx="10" fill="#1a2540" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="495" y="403" text-anchor="middle" font-size="11" font-weight="600" fill="#ffffff">namespace: default</text>
+
+  <rect x="245" y="410" width="130" height="35" rx="6" fill="#0d1526" stroke="#4ade80" stroke-width="1"/>
+  <text x="310" y="425" text-anchor="middle" font-size="10" fill="#ffffff">todo-app (pod 1)</text>
+  <text x="310" y="439" text-anchor="middle" font-size="9" fill="#4ade80">nginx:alpine · Running</text>
+
+  <rect x="385" y="410" width="130" height="35" rx="6" fill="#0d1526" stroke="#4ade80" stroke-width="1"/>
+  <text x="450" y="425" text-anchor="middle" font-size="10" fill="#ffffff">todo-app (pod 2)</text>
+  <text x="450" y="439" text-anchor="middle" font-size="9" fill="#4ade80">nginx:alpine · Running</text>
+
+  <rect x="525" y="410" width="120" height="35" rx="6" fill="#0d1526" stroke="#0078d4" stroke-width="1"/>
+  <text x="585" y="425" text-anchor="middle" font-size="10" fill="#ffffff">LoadBalancer</text>
+  <text x="585" y="439" text-anchor="middle" font-size="9" fill="#0078d4">20.74.27.124</text>
+
+  <!-- Arrow GitHub to ArgoCD -->
+  <line x1="170" y1="120" x2="210" y2="120" stroke="#238636" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="210" y1="120" x2="210" y2="305" stroke="#238636" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="210" y1="305" x2="235" y2="305" stroke="#238636" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrGreen)"/>
+  <text x="195" y="210" text-anchor="middle" font-size="9" fill="#238636" transform="rotate(-90 195 210)">watch repo</text>
+
+  <!-- Arrow ArgoCD to Apps -->
+  <line x1="355" y1="370" x2="355" y2="410" stroke="#EF7B4D" stroke-width="1.5" marker-end="url(#arrOrange)"/>
+  <text x="370" y="393" font-size="9" fill="#EF7B4D">deploy</text>
+
+  <!-- Arrow Prometheus to Grafana -->
+  <line x1="615" y1="311" x2="625" y2="311" stroke="#E6522C" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Helm label -->
+  <rect x="810" y="80" width="160" height="70" rx="10" fill="#161b27" stroke="#0f9bd7" stroke-width="1.5"/>
+  <rect x="810" y="80" width="160" height="6" rx="10" fill="#0f9bd7"/>
+  <text x="890" y="106" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">Helm v3</text>
+  <text x="890" y="124" text-anchor="middle" font-size="10" fill="#6b7a9e">kube-prometheus-stack</text>
+  <text x="890" y="139" text-anchor="middle" font-size="10" fill="#0f9bd7">chart install</text>
+
+  <!-- Arrow Helm to monitoring -->
+  <line x1="810" y1="115" x2="755" y2="270" stroke="#0f9bd7" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
+
+  <!-- Legend -->
+  <rect x="30" y="490" width="940" height="90" rx="10" fill="#0d1526" stroke="#1e2d45" stroke-width="1"/>
+  <text x="50" y="510" font-size="11" font-weight="600" fill="#ffffff">Legend</text>
+  <rect x="50" y="520" width="12" height="12" rx="2" fill="#7B42BC"/>
+  <text x="68" y="531" font-size="10" fill="#6b7a9e">Terraform IaC</text>
+  <rect x="160" y="520" width="12" height="12" rx="2" fill="#EF7B4D"/>
+  <text x="178" y="531" font-size="10" fill="#6b7a9e">ArgoCD GitOps</text>
+  <rect x="280" y="520" width="12" height="12" rx="2" fill="#E6522C"/>
+  <text x="298" y="531" font-size="10" fill="#6b7a9e">Prometheus</text>
+  <rect x="380" y="520" width="12" height="12" rx="2" fill="#F46800"/>
+  <text x="398" y="531" font-size="10" fill="#6b7a9e">Grafana</text>
+  <rect x="460" y="520" width="12" height="12" rx="2" fill="#4ade80"/>
+  <text x="478" y="531" font-size="10" fill="#6b7a9e">Running pods</text>
+  <rect x="560" y="520" width="12" height="12" rx="2" fill="#0078d4"/>
+  <text x="578" y="531" font-size="10" fill="#6b7a9e">Azure services</text>
+  <rect x="660" y="520" width="12" height="12" rx="2" fill="#238636"/>
+  <text x="678" y="531" font-size="10" fill="#6b7a9e">GitHub integration</text>
+
+  <text x="50" y="560" font-size="10" fill="#6b7a9e">Stack: Terraform 1.14 · AKS v1.33.7 · ArgoCD v3.3.3 · Prometheus · Grafana · Helm v3 · Azure francecentral</text>
+</svg>
